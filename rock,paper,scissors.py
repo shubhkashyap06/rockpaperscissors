@@ -1,12 +1,11 @@
 import tkinter as tk
 import random
 
-# Initialize scores and round number
 player_score = 0
 computer_score = 0
 round_number = 1
 
-# Function to determine winner
+#game function
 def play(player_choice):
     global player_score, computer_score, round_number
 
@@ -31,14 +30,13 @@ def play(player_choice):
 root = tk.Tk()
 root.title("Rock Paper Scissors - Made by Shubh Kashyap")
 root.geometry("500x400")
-root.config(bg="#1e1e2e")  # Dark background
+root.config(bg="#1e1e2e") 
 
 # Header
 header_label = tk.Label(root, text="🎮 Rock Paper Scissors 🎮", 
                         font=("Arial", 20, "bold"), fg="#ffcc00", bg="#1e1e2e")
 header_label.pack(pady=10)
 
-# Subheader
 credit_label = tk.Label(root, text="Made by Shubh Kashyap", 
                         font=("Arial", 12, "italic"), fg="#00ffcc", bg="#1e1e2e")
 credit_label.pack()
@@ -73,3 +71,4 @@ score_label = tk.Label(root, text="Score ➝ You: 0 | Computer: 0",
 score_label.pack()
 
 root.mainloop()
+
